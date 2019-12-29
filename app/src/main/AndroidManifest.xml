@@ -9,7 +9,16 @@
         android:roundIcon="@color/lotto_launcher_background"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LottoActivity"></activity>
+        <service
+            android:name=".fcm.MyFirbaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".LottoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
