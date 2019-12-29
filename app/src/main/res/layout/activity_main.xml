@@ -5,8 +5,15 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="10dp">
 
- 
+    <Button
+        android:id="@+id/lottoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로또 시뮬레이터로 이동"/>
+
+
 
 </LinearLayout>
