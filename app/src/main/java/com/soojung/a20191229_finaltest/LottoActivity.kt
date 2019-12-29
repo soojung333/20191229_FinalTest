@@ -2,6 +2,7 @@ package com.soojung.a20191229_finaltest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_lotto.*
 import java.util.*
 import kotlin.collections.ArrayList
@@ -31,12 +32,14 @@ class LottoActivity : BaseActivity() {
 //    당첨번호 만드는 함수를 따로 빼줌
     fun makeWinLottoNum() {
 
+//    기존의 당첨번호를 싸그리 삭제.
 //    6 개의 당첨 번호 생성 => 6번 반복
 //    랜덤으로 숫자를 생성 => 아무 제약 없는 랜덤이 아니라 => 1~45 의 범위. / 중복 허용X 제약 조건.
 //    제약 조건을 통과 한다면 => 당첨번호 목록으로 추가. (2, 10, 25 ... ) => 배열(ArrayList)을 사용.
 //    작은 숫자부터 나타나도록 정렬
 //    여기까지 완료되면 6개의 텍스트뷰에 반영.
 
+    winLottoNumArr.clear()
 
     for (i in 0..5) {
         while (true) {
@@ -61,6 +64,16 @@ class LottoActivity : BaseActivity() {
         }
 
     }
+
+//    Collections 클래스의 기능을 이용해서 ArrayList 내부의 값을 정렬 기능 이용.
+    Collections.sort(winLottoNumArr)
+
+
+    for (num in winLottoNumArr) {
+        Log.d("당첨번호", num.toString())
+    }
+
+
 
 }
 
