@@ -3,6 +3,8 @@ package com.soojung.a20191229_finaltest
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import com.google.firebase.iid.FirebaseInstanceId
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -26,6 +28,12 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setValues() {
+
+       Log.d("토큰값확인", FirebaseInstanceId.getInstance().token)
+
+
     }
+
+
 
 }
