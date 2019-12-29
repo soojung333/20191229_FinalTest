@@ -95,6 +95,7 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/myNumTxt01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"
@@ -103,6 +104,7 @@
 
 
         <TextView
+            android:id="@+id/myNumTxt02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"
@@ -111,6 +113,7 @@
 
 
         <TextView
+            android:id="@+id/myNumTxt03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"
@@ -119,6 +122,7 @@
 
 
         <TextView
+            android:id="@+id/myNumTxt04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"
@@ -127,6 +131,7 @@
 
 
         <TextView
+            android:id="@+id/myNumTxt05"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"
@@ -135,6 +140,7 @@
 
 
         <TextView
+            android:id="@+id/myNumTxt06"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"
@@ -163,6 +169,7 @@
             android:text="사용 금액 : "/>
 
         <TextView
+            android:id="@+id/usedMoneyTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0원"/>
@@ -180,6 +187,7 @@
             android:text="당첨 금액 : "/>
 
         <TextView
+            android:id="@+id/totalWinMoneyTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0원"/>
