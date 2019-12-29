@@ -174,6 +174,15 @@
         android:text="로또 한 장 구매하기"
         android:layout_marginTop="10dp"/>
 
+
+    <Button
+        android:id="@+id/BuyAutoLottoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로또 구매 자동 반복하기"
+        android:layout_marginTop="5dp"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
